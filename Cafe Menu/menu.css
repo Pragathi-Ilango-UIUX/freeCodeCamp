@@ -25,15 +25,15 @@ h1, h2, p {
 .menu {
   width: 80%;
   background-color: burlywood;
-  margin-left: auto;
+  margin-left: auto; /* Center the menu with teh body element */
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
 }
 
-img {
-  display: block;
-  margin-left: auto;
+img { 
+  display: block; /* To make the image behave like heading elements - blcock instead of inline */
+  margin-left: auto; /* To center the image horizontally */
   margin-right: auto;
   margin-top: -25px;
 }
@@ -41,7 +41,7 @@ img {
 hr {
   height: 2px;
   background-color: brown;
-  border-color: brown;
+  border-color: brown; /*The default value of a property named border-width is 1px for all edges of hr elements. */
 }
 
 .bottom-line {
@@ -53,12 +53,13 @@ h1, h2 {
 }
 
 .item p {
-  display: inline-block;
+  display: inline-block; /* Take up width of the their content and get them on the same line */
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
 }
 
+/* To ensure there is no wrapping of the menu item names on the left when page width is smaller*/
 .flavor, .dessert {
   text-align: left;
   width: 75%;
@@ -91,6 +92,6 @@ a:hover {
   color: brown;
 }
 
-a:active {
+a:active { /* when the link is actually being clicked */
   color: brown;
 }
