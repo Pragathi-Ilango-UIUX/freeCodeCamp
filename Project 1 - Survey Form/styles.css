@@ -1,0 +1,106 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4e8d6;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7a6a57;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input, select, textarea {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+.option {
+    display: block;
+    margin: 10px 0px;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+  }
+
+select{
+    padding-right: 20px;
+}
+
+#dropdown{
+    color: #ccc;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #ccc;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -10px;
+}
+
+legend {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d3bca4;
+  margin: 10px 0;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #6b4e32;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #573b24;
+}
