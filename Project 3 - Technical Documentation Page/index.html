@@ -1,0 +1,248 @@
+<!-- Project for freecodecamp - Technical Documentation - By Pragathi Ilango -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Beginner's Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>HTML Guide</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#HTML_Basics" class="nav-link">HTML Basics</a>
+    <a href="#HTML_Elements" class="nav-link">HTML Elements</a>
+    <a href="#Forms_and_Tables" class="nav-link">Forms and Tables</a>
+    <a href="#Best_Practices" class="nav-link">Best Practices</a>
+    <a href="#Reference" class="nav-link">Reference</a>
+  </nav>
+
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It defines the structure of web content.</p>
+      <p>With HTML, you can create paragraphs, headings, links, images, and much more.</p>
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <p>The !DOCTYPE declaration represents the document type, and helps browsers to display web pages correctly.</p>
+      <ul>
+        <li>It is the foundation of web development.</li>
+        <li>Works with CSS and JavaScript for full functionality.</li>
+        <li>It must only appear once, at the top of the page (before any HTML tags).</li>
+        <li>The !DOCTYPE declaration is not case sensitive.</li>
+      </ul>
+    </section>
+
+    <section id="HTML_Basics" class="main-section">
+      <header>HTML Basics</header>
+      <p>HTML documents are structured using tags enclosed in angle brackets, like &lt;tag&gt;.</p>
+      <p>Tags typically come in pairs: opening &lt;tag&gt; and closing &lt;/tag&gt;.</p>
+      <code>&lt;html&gt;...&lt;/html&gt;</code>
+      <p>The above example defines the root element of an HTML document.</p>
+      <ul>
+        <li>HTML is not case-sensitive.</li>
+        <li>Indentation improves readability but is not required.</li>
+      </ul>
+    </section>
+
+    <section id="HTML_Elements" class="main-section">
+      <header>HTML Elements</header>
+      <p>HTML elements are the building blocks of any HTML document. They define the structure and content of a web page. Let's dive into some of the essential elements.</p>
+      
+      <h3>1. Headings</h3>
+      <p>Headings are used to define the structure and hierarchy of content. There are six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. The <code>&lt;h1&gt;</code> tag represents the most important heading, while <code>&lt;h6&gt;</code> represents the least important.</p>
+      <ul>
+        <li><code>&lt;h1&gt;</code> - Main title of the document.</li>
+        <li><code>&lt;h2&gt;</code> - Subsections of the main title.</li>
+        <li><code>&lt;h3&gt;</code> - Subsections within <code>&lt;h2&gt;</code>.</li>
+        <li><code>&lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</code> - Further subdivisions.</li>
+      </ul>
+      <p>Example:</p>
+      <code1>
+        &lt;h1&gt;Welcome to HTML&lt;/h1&gt;<br>
+        &lt;h2&gt;Getting Started&lt;/h2&gt;<br>
+        &lt;h3&gt;Introduction&lt;/h3&gt;
+      </code1>
+    
+      <h3>2. Links</h3>
+      <p>Links are created using the <code>&lt;a&gt;</code> tag, which stands for anchor. Links can point to internal pages, external websites, or specific sections of a page.</p>
+      <ul>
+        <li><code>href</code> - Specifies the URL of the page the link goes to.</li>
+        <li><code>target</code> - Defines where to open the linked document (e.g., <code>_blank</code> for a new tab).</li>
+      </ul>
+      <p>Example:</p>
+      <code>
+        &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+      </code>
+    
+      <h3>3. Images</h3>
+      <p>Images are added using the <code>&lt;img&gt;</code> tag. It requires the <code>src</code> attribute to define the image source and the <code>alt</code> attribute to provide alternate text for accessibility.</p>
+      <ul>
+        <li><code>src</code> - Path to the image file (URL or local path).</li>
+        <li><code>alt</code> - Describes the image content for screen readers or when the image fails to load.</li>
+      </ul>
+      <p>Example:</p>
+      <code>
+        &lt;img src="example.jpg" alt="Description of the image"&gt;
+      </code>
+    
+      <p>These elements are foundational to creating structured and accessible web content. Use them effectively to build user-friendly web pages.</p>
+    </section>
+    
+
+    <section id="Forms_and_Tables" class="main-section">
+      <header>Forms and Tables</header>
+      <p>Forms are used to collect user input. They consist of various elements like text fields, checkboxes, radio buttons, and more, wrapped inside a <code>&lt;form&gt;</code> tag. Data from forms can be sent to a server for processing.</p>
+
+      <h3>Form Elements</h3>
+      <ul>
+        <li><code>&lt;input&gt;</code> - Used for single-line text, passwords, or other input types like email or number. Common attributes:
+          <ul>
+            <li><code>type</code> - Specifies the type of input (e.g., text, password, email).</li>
+            <li><code>name</code> - Identifies the input when data is submitted.</li>
+            <li><code>placeholder</code> - Adds a hint inside the input field.</li>
+          </ul>
+        </li>
+        <li><code>&lt;textarea&gt;</code> - For multi-line text input.</li>
+        <li><code>&lt;label&gt;</code> - Describes the input field, improving accessibility.</li>
+        <li><code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> - Used for dropdown lists.</li>
+        <li><code>&lt;button&gt;</code> - Represents a clickable button.</li>
+      </ul>
+    
+      <h3>Form Example</h3>
+      <code1>
+        &lt;form action="/submit" method="POST"&gt;<br>
+        &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="name" name="name" placeholder="Enter your name"&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+        &nbsp;&nbsp;&lt;input type="email" id="email" name="email" placeholder="Enter your email"&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;label for="message"&gt;Message:&lt;/label&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;textarea id="message" name="message" rows="4" cols="30" placeholder="Type your message"&gt;&lt;/textarea&gt;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+        &lt;/form&gt;
+      </code1>
+
+      <p>Tables are used to display data in rows and columns. The <code>&lt;table&gt;</code> element contains all table content, while <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> are used to structure the rows and cells.</p>
+
+      <h3>Key Table Elements</h3>
+      <ul>
+        <li><code>&lt;table&gt;</code> - Defines the table.</li>
+        <li><code>&lt;tr&gt;</code> - Represents a row in the table.</li>
+        <li><code>&lt;th&gt;</code> - Represents a header cell in the table, typically bold and centered.</li>
+        <li><code>&lt;td&gt;</code> - Represents a data cell in the table.</li>
+        <li><code>&lt;caption&gt;</code> - Adds a title to the table.</li>
+      </ul>
+    
+      <h3>Table Example</h3>
+      <code1>
+        &lt;table border="1"&gt;<br>
+        &nbsp;&nbsp;&lt;caption&gt;Student Grades&lt;/caption&gt;<br>
+        &nbsp;&nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Subject&lt;/th&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Grade&lt;/th&gt;<br>
+        &nbsp;&nbsp;&lt;/tr&gt;<br>
+        &nbsp;&nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John Doe&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Math&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;A&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;/tr&gt;<br>
+        &nbsp;&nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane Smith&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;English&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;B+&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;/tr&gt;<br>
+        &lt;/table&gt;
+      </code1>
+    
+      <p>The table example above shows how data about students and their grades is displayed. The <code>border</code> attribute adds borders around table cells for better visibility.</p>
+    </section>
+
+    <section id="Best_Practices" class="main-section">
+      <header>Best Practices</header>
+      <p>When writing HTML, following best practices ensures your code is clean, maintainable, and accessible. Here are some tips to keep in mind:</p>
+    
+      <h3>1. Use Semantic HTML</h3>
+      <p>Semantic elements, like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>, provide meaning to the content. They improve readability for developers and accessibility for users.</p>
+      <code1>
+        &lt;header&gt;<br>
+        &nbsp;&nbsp;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;<br>
+        &lt;/header&gt;
+      </code1>
+    
+      <h3>2. Keep Your Code Indented and Organized</h3>
+      <p>Consistent indentation and organization make your code easier to read and debug.</p>
+      <code1>
+        &lt;div class="container"&gt;<br>
+        &nbsp;&nbsp;&lt;p&gt;This is an indented paragraph.&lt;/p&gt;<br>
+        &nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;/ul&gt;<br>
+        &lt;/div&gt;
+      </code1>
+    
+      <h3>3. Use Meaningful Names for IDs and Classes</h3>
+      <p>Choose descriptive names for your <code>id</code> and <code>class</code> attributes to make the code self-explanatory.</p>
+      <code1>
+        &lt;div id="main-content" class="blog-post"&gt;<br>
+        &nbsp;&nbsp;&lt;h2&gt;Understanding CSS&lt;/h2&gt;<br>
+        &lt;/div&gt;
+      </code1>
+    
+      <h3>4. Optimize for Accessibility</h3>
+      <p>Use attributes like <code>alt</code> for images, <code>aria-*</code> attributes for interactive elements, and ensure proper heading structure to make your website accessible to all users.</p>
+      <code1>
+        &lt;img src="example.jpg" alt="Description of the image"&gt;<br>
+        &lt;button aria-label="Close menu"&gt;X&lt;/button&gt;
+      </code1>
+    
+      <h3>5. Avoid Inline Styles</h3>
+      <p>Use external stylesheets instead of inline styles to separate content and presentation. This makes it easier to maintain and scale your code.</p>
+      <code1>
+        /* styles.css */<br>
+        .btn {<br>
+        &nbsp;&nbsp;background-color: #3498db;<br>
+        &nbsp;&nbsp;color: white;<br>
+        &nbsp;&nbsp;padding: 10px 20px;<br>
+        }
+      </code1>
+    
+      <h3>6. Validate Your HTML</h3>
+      <p>Always validate your HTML to ensure there are no syntax errors. You can use the <a href="https://validator.w3.org/" target="_blank">W3C Validator</a>.</p>
+    
+      <h3>7. Minimize Use of Deprecated Tags</h3>
+      <p>Avoid using deprecated tags like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>. Instead, use modern CSS for styling and layout.</p>
+    
+      <h3>8. Include Meta Tags</h3>
+      <p>Meta tags, like <code>&lt;meta charset="UTF-8"&gt;</code>, improve browser compatibility and SEO.</p>
+      <code1>
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+        &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+        &lt;/head&gt;
+      </code1>
+    
+      <h3>9. Use Comments Wisely</h3>
+      <p>Add comments to explain complex sections of your code, but avoid cluttering it with excessive or redundant comments.</p>
+      <code1>
+        &lt;!-- This is a comment explaining the purpose of the following section --&gt;<br>
+        &lt;section id="about-us"&gt;<br>
+        &nbsp;&nbsp;&lt;p&gt;About us content.&lt;/p&gt;<br>
+        &lt;/section&gt;
+      </code1>
+    
+      <h3>10. Test Your Code</h3>
+      <p>Regularly test your HTML across different browsers and devices to ensure compatibility and responsiveness.</p>
+    
+      <p>By following these practices, you can write clean, efficient, and accessible HTML code for any project.</p>
+    </section>
+    
+
+    <section id="Reference" class="main-section">
+      <header>Reference</header>
+      <p>Some of the documentation in this page is taken from <a href="https://www.w3schools.com/" target="_blank">w3schools</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
