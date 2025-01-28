@@ -1,0 +1,172 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1{
+  font-size: 7em;
+}
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: #333;*/
+  padding: 10px 0;
+  color: #4a3f35; 
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  margin: 0 15px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+#welcome-section {
+  font-family: 'Pacifico', cursive; /* For a playful, hand-drawn vibe */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5e8d7, #e8d6c3); /* Muted cream and vintage tones */
+  color: #4a3f35; /* Muted, vintage-style text color */
+  text-align: center;
+
+  p{
+    font-family: 'Libre Baskerville', serif; /* Elegant secondary font */
+  }
+}
+
+/* Projects Section */
+#projects {
+  text-align: center;
+  padding: 50px 20px 100px 20px;
+  background-color: #f9f4ee; /* Light background for contrast */
+}
+
+#projects h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #4a3f35; 
+  margin-bottom: 30px;
+}
+
+#projects p{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  color: #4a3f35; 
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-tile {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-tile img {
+  max-width: 100%;
+  height:150px;
+  border-radius: 8px;
+  
+}
+
+.project-tile h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.project-tile a {
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+  padding: 10px;
+  font-size: 1rem;
+  color: #4a3f35; 
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.project-tile a:hover {
+  color:#fbeadd;
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  padding: 50px 20px 10px 20px;
+  background-color: #fbeadd; /* Muted pale peach to follow your theme */
+  color: #4a3f35;  /* Soft dark text for readability */
+}
+
+#contact h2 {
+  font-family: 'Pacifico', cursive; /* Playful font for the heading */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between links */
+  margin: 20px 0;
+}
+
+.contact-links a {
+  font-family: 'Libre Baskerville', serif; /* Clean and modern for links */
+  font-size: 1.2rem;
+  color: #4a3f35;  /* Blue for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-links a:hover {
+  color: white; /* Darker blue for hover effect */
+}
+
+.footer-note {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.6rem;
+  color: #4a3f35;  /* Subtle grey for footer text */
+  margin-top: 6em;
+}
+
+
+/* Media Query */
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+}
