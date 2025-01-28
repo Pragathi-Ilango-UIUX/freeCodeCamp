@@ -1,0 +1,94 @@
+<!-- Pragathi Ilango - Freecode camp - Project 4 - Create a landing page - Wanted to create a cute cookie site-->
+<!-- Note: The video and images used in this project are sourced from the internet and are not my own creations. All credits belong to their respective owners. This is for project purposes only. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Bliss</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header">
+    <img id="header-img" src="cookies/logo.png" alt="Cookie Bliss Logo" width="50px">
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#menu">Menu</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Welcome to Cookie Bliss</h1>
+    <p>Indulge in the finest cookies crafted with love and quality ingredients.</p>
+    <video id="video"controls autoplay muted>
+      <source src="cookie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="about">
+    <h2>About Cookie Bliss</h2>
+    <p>Cookie Bliss is dedicated to bringing you the best cookies in town.</p>
+  </section>
+
+  <!-- Search Section -->
+  <section id="search">
+    <p>Can't find your favorite cookie? Email us and we'll bake it specially for you!</p>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" name="email" type="email" placeholder="Enter your email to stay updated" required>
+      <input id="submit" type="submit" value="Subscribe">
+    </form>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Cookie Selection</h2>
+    <div class="cookie-container">
+      <div class="cookie-card">
+        <img src="cookies/chip.png" alt="Chocolate Chip Cookie">
+        <h3>Chocolate Chip</h3>
+        <p>Classic and delicious.</p>
+      </div>
+      <div class="cookie-card">
+        <img src="cookies/oatmeal.png" alt="Oatmeal Raisin Cookie">
+        <h3>Oatmeal Raisin</h3>
+        <p>Healthy and hearty.</p>
+      </div>
+      <div class="cookie-card">
+        <img src="cookies/peanut.png" alt="Peanut Butter Cookie">
+        <h3>Peanut Butter</h3>
+        <p>Rich and nutty.</p>
+      </div>
+      <div class="cookie-card">
+        <img src="cookies/white.png" alt="White Chocolate Macadamia Cookie">
+        <h3>White Chocolate Macadamia</h3>
+        <p>Elegant and creamy.</p>
+      </div>
+      <div class="cookie-card">
+        <img src="cookies/sniker.png" alt="Snickerdoodle Cookie">
+        <h3>Snickerdoodle</h3>
+        <p>Warm and cinnamon-y.</p>
+      </div>
+      <div class="cookie-card">
+        <img src="cookies/double.png" alt="Double Chocolate Cookie">
+        <h3>Double Chocolate</h3>
+        <p>Decadent and rich.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:info@cookiebliss.com">info@cookiebliss.com</a> for inquiries.</p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
